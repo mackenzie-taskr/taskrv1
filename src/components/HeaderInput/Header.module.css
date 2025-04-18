@@ -1,0 +1,175 @@
+.containerHeader {
+    width: 100vw;
+    background: var(--gray-700);
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContent {
+    max-width: 1120px;
+    width: 100%;
+    height: 12.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.logoutDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.buttonLogout {
+    border: 2px solid var(--danger);
+    background: none;
+    color: var(--danger);
+    font-weight: 700;
+    font-size: 0.0.875rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px ;
+
+   
+}
+
+.buttonLogout:hover {
+    transition: background 0.2s, color 0.2s;
+    background: var(--danger);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--blue-700);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+}
+
+form {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.inputTask {
+    background: var(--gray-500);
+    color: var(--gray-300);
+    font-size: 1rem;
+    width: 40.8125rem;
+    flex: 1;
+    height: 54px;
+    border-radius: 8px ;
+    padding-left: 1rem;
+}
+
+.buttonAddTask {
+    background: var(--blue-700);
+    color: var(--gray-100);
+    font-weight: 700;
+    font-size: 0.0.875rem;
+    cursor: pointer;
+    width: 7.3125rem;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px ;
+
+    transition: background 0.1s, color 0.1s;
+}
+
+.buttonAddTask:hover {
+    background: var(--blue-dark);
+    color: var(--white);
+    box-shadow:  1px 1px 6px 1px var(--gray-400);
+}
+
+@keyframes spinner {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .spinner {
+      border: 4px solid #fff;
+      border-top: 4px solid transparent;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spinner 1s linear infinite;
+    }
+
+
+
+@media (max-width:768px) {
+    
+    :root {
+        font-size: 0.875rem;
+    }
+
+    .containerHeader {
+        width: 100vw;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .inputTask {
+        font-size: 1rem;
+        width: 82%;
+        padding-left: 0.5rem;
+        height: 3.375rem;
+    }
+
+    .buttonAddTask {
+        font-size: 0.7rem;
+        width: 16%;
+        height: 3.375rem;
+        gap: 0.5rem;
+        
+    }
+
+    .textButton{
+        display: none;
+    }
+
+    .title img {
+        width: 4rem;
+    }
+
+    .headerContent {
+       padding: 0 1.5rem;
+    }
+}

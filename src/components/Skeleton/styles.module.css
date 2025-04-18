@@ -1,0 +1,138 @@
+.containerHeader {
+    width: 100vw;
+    background: var(--gray-700);
+    padding-bottom: 1rem;
+}
+
+.headerContent {
+    max-width: 1120px;
+    width: 100%;
+    height: 12.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.logoutContent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.buttonLogout {
+    background: var(--gray-500);
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 8px ;
+}
+
+
+.title {
+    width: 200px;
+    height: 50px;
+    background: var(--gray-500);
+    border-radius: 8px ;
+}
+
+form {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.inputTask {
+    background: var(--gray-500);
+    width: 40.8125rem;
+    flex: 1;
+    height: 54px;
+    border-radius: 8px ;
+    padding-left: 1rem;
+}
+
+.buttonAddTask {
+    background: var(--gray-500);
+    width: 7.3125rem;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px ;
+}
+
+.containerToDoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80vw;
+    height: 60vh;
+ 
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;  
+     
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    background: var(--gray-500);
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:768px) {
+
+    .containerHeader {
+        width: 100vw;
+        height: 12.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .inputTask {
+        width: 82%;
+        padding-left: 0.5rem;
+        height: 3.375rem;
+    }
+
+    .buttonAddTask {
+        width: 16%;
+        height: 3.375rem;
+        gap: 0.5rem;
+        
+    }
+
+    .headerContent {
+       padding: 0 1.5rem;
+    }
+
+    .containerToDoList {
+        width: 100vw;
+        height: 100vh;
+        padding: 0 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
